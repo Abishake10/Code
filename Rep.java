@@ -22,7 +22,7 @@ class Rep
 			}
 			if(count==0)
 			{
-				System.out.print(a[i]);
+				System.out.print(a[i]+" ");
 			}
 			count=0;
 		}

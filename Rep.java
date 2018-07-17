@@ -1,5 +1,5 @@
 import java.util.*;
-class Rep
+class Lar
 {
 	public static void main(String args[])
 	{
@@ -13,11 +13,14 @@ class Rep
 		}
 		for(int i=0;i<n;i++)
 		{
-			for(int j=i+1;j<n;j++)
+			for(int j=0;j<n;j++)
 			{
+				if(i!=j)
+				{
 				if(a[i]==a[j])
 				{
 					count++;
+				}
 				}
 			}
 			if(count==0)

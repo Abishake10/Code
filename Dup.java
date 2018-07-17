@@ -6,7 +6,7 @@ class Dup
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
 		int a[]=new int[n];
-		int count==0;
+		int count=0,b=0;
 		for(int i=0;i<n;i++)
 		{
 			a[i]=s.nextInt();
@@ -19,6 +19,7 @@ class Dup
 				if(a[i]==a[j])
 				{
 					count++;
+					b++;
 				}
 			}
 			if(count>0)
@@ -26,6 +27,10 @@ class Dup
 				System.out.print(a[i]);
 			}
 			count=0;
+		}
+		if(b==0)
+		{
+			System.out.print("Unique");
 		}
 	}
 }

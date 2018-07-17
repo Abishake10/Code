@@ -5,15 +5,15 @@ class Lar
 	{
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
-		int a[]=new int[n];
+		int b[]=new int[n];
 		for(int i=0;i<n;i++)
 		{
-			a[i]=s.nextInt();
+			b[i]=s.nextInt();
 		}
 		Arrays.sort(a);
-		for(int i=n-1;i>=0;i--)
+		for(int j=n-1;j>=0;j--)
 		{
-			System.out.print(a[i]);
+			System.out.print(b[j]);
 		}
 	}
 }
